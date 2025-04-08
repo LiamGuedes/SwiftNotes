@@ -1,4 +1,4 @@
-## 1. 🧠 Binary System and Data Representation
+## 🧠 Binary System and Data Representation
 
 Before diving into programming, it’s important to understand how a computer *sees* information. Even the most modern systems rely on a very basic principle: they understand only two states — **on** and **off**. Everything you see on a screen is ultimately the result of millions (or billions) of these states organized in very clever ways.
 

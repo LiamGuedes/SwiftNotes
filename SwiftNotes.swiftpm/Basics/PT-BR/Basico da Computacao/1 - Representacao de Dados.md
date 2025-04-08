@@ -1,4 +1,4 @@
-## 1. 🧠 Sistema Binário e Representação de Dados
+## 🧠 Sistema Binário e Representação de Dados
 
 Antes de começar a programar, vale muito entender como o computador *enxerga* as coisas. Afinal, por mais moderno que o sistema pareça, no fundo ele só entende dois estados: **ligado** e **desligado**. Tudo — absolutamente tudo — que vemos em uma tela é resultado de milhões (ou bilhões) desses estados sendo organizados de forma muito inteligente.
 
