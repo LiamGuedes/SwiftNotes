@@ -49,7 +49,7 @@ São muito comuns para scripts, automações, e ambientes interativos.
 
 ---
 
-### 🔁 Compilado + Interpretado: uma combinação moderna
+### 🔁 Compilado + Interpretado: Modelo Hibrido
 
 Hoje, muitas linguagens adotam um modelo **híbrido**, misturando as duas abordagens:
 
