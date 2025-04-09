@@ -15,9 +15,10 @@ let package = Package(
     products: [
         .iOSApplication(
             name: "SwiftNotes",
-            targets: ["AppModule"],
+            targets: ["SwiftNotes"],
             bundleIdentifier: "atlasomne.SwiftNotes",
-            displayVersion: "1.0",
+            teamIdentifier: "2JHJXX82L5",
+            displayVersion: "1.1",
             bundleVersion: "1",
             appIcon: .placeholder(icon: .star),
             accentColor: .presetColor(.indigo),
@@ -36,8 +37,8 @@ let package = Package(
     ],
     targets: [
         .executableTarget(
-            name: "AppModule",
-            path: "."
+            name: "SwiftNotes",
+            path: "Sources/SwiftUI"
         )
     ]
 )
