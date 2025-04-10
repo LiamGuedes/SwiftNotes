@@ -13,14 +13,14 @@ Swift suporta os operadores matemáticos padrão:
 | `+`      | Adição           | `2 + 3` → `5` |
 | `-`      | Subtração        | `5 - 2` → `3` |
 | `*`      | Multiplicação    | `4 * 2` → `8` |
-| `/`      | Divisão          | `10 / 2` → `5` |
+| `/`      | Divisão          | `10 / 2` → `5`|
 | `%`      | Resto da divisão | `7 % 3` → `1` |
 
 ---
 
 ### ⚠️ Espaçamento entre operadores
 
-Atenção: o Swift exige que operadores sejam usados de forma **legível e coerente**. Por isso, os seguintes exemplos causam erro:
+Vale Lembrar: o Swift exige que operadores sejam usados de forma **legível e coerente**, deste modo espaçamentos incorretos podem fazer com que a aplicação não seja compilada. Por isso, os seguintes exemplos causam erro:
 
 ```swift
 // ❌ Gera erro:
@@ -28,7 +28,7 @@ let x = 2+ y    // ERRO
 let x= 2 +y     // ERRO
 ```
 
-Mas estes estão corretos:
+Porém, com os espaçamentos corretos, o código funciona normalmente:
 
 ```swift
 // ✅ Correto:

@@ -63,3 +63,53 @@ counter *= 2
 counter /= 2
 print(counter)
 
+/* In Swift, you can't assign directly values of differente types (Ex: integerVar: Int = 12.3 + 10), it's cause error. But if you want to convert the value, you can convert it explicity (Ex: integerVar: Int = Int(12.3) + 10)
+
+ - Error Performed:
+    Cannot assign value of type 'Double' to type 'Int'
+ */
+
+/* In the same way, you can't make operations with a different values like Int + Double, all types, need to be the same to perform without errors
+
+ - Error Performed:
+    Binary operator '*' cannot be applied to operands of type 'Double' and 'Int'
+ */
+
+let doubleValue: Double = 12.3
+let intValue: Int = Int(doubleValue) + 10
+print(intValue)
+
+// Swift also have, the Type inference, that allows the language infer based in the value, without the developer needs to infer manually.
+
+let diceFaces = 6
+print(diceFaces)
+
+// String is a collection of characters, called "character set". As well, each character have a code in unicode, and when you declare a String, Swift automatically perform a character set creation.
+
+let courseClass: Character = "A"
+let courseNameUnicode: Int = Int(courseClass.asciiValue!)
+var courseName: String =  "Math"
+
+/* Concatenation of String as the same as number, where you can perform a sum of Strings. But you can't perform a sum of String with character. It will show the following error:
+ - Error:
+    Cannot convert value of type 'Character' to expected argument type 'String'
+ 
+ And we can have another ways to make it better and more readable, with interpolation \(). As well, we can do it with multi lines too, for long descriptions or texts, and the interpolation works fine with it. Take notes, that you need to jump a line when you are working with mult line strings, otherwise the following error will be show:
+ - Error
+    Multi-line string literal content must begin on a new line
+*/
+
+let fullCourse: String = "Course: \(courseName), Class: \(courseClass), Class Code: \(courseNameUnicode)"
+courseName += " Advanced"
+courseName = courseName + " II"
+print(courseName)
+
+let courseDescription: String = """
+                                Advanced Math II
+                                This class has a objetive to teach, Linear Algebra and our systems.
+                                Class: \(courseClass) Code: \(courseNameUnicode)
+                                """
+print(courseDescription)
+
+
+
