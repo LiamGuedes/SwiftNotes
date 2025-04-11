@@ -111,5 +111,10 @@ let courseDescription: String = """
                                 """
 print(courseDescription)
 
+// Tuples can aggregate homogenous and heterogeneus values into the variable, where you only need to put the types separated by comma. Ex (Double, Int) or (String, String). And to not be confused, you can add a name to made your tuple more readable. Ex: (x: Int, y: Int, z: Int).
+
+let coordinates: (Int, Int) = (1, 2)
+let namedCoordinates: (x: Int, y: Int) = (1, 2)
+
 
 
