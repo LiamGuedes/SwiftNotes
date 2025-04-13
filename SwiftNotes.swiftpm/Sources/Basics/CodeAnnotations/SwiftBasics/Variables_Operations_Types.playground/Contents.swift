@@ -111,10 +111,28 @@ let courseDescription: String = """
                                 """
 print(courseDescription)
 
-// Tuples can aggregate homogenous and heterogeneus values into the variable, where you only need to put the types separated by comma. Ex (Double, Int) or (String, String). And to not be confused, you can add a name to made your tuple more readable. Ex: (x: Int, y: Int, z: Int).
+// Tuples can aggregate homogenous and heterogeneus values into the variable, where you only need to put the types separated by comma. Ex (Double, Int) or (String, String). And to not be confused, you can add a name to made your tuple more readable. Ex: (x: Int, y: Int, z: Int). You can also, add without a implicit type, and swift will infer it automatically.
 
 let coordinates: (Int, Int) = (1, 2)
-let namedCoordinates: (x: Int, y: Int) = (1, 2)
+let namedCoordinates: (x: Int, y: Int, z: Int) = (1, 2, 5)
+let autoTypeCoordinates = (x: 10, y: 20, z: 30)
 
+print(namedCoordinates.x)
+print(coordinates.0)
 
+/* You can add to the variable, the tuple values, but you need to declare the exactly same quantity of variables and tuple elements. If you try to add differente number of variables that is not the same of tuple, you will caugh the following error:
+ - Error:
+    '(x: Int, y: Int, z: Int)' is not convertible to '(Int, Int)', tuples have a different number of elements
+ 
+    However, if you want to ignore determined value of tuple, you can ignore it, with _ (underscore), like the example below:
+ */
+let (xAxis, yAxis, _) = namedCoordinates
+print(yAxis)
 
+/* Many times, you need to type determined objetct ou variable set, for it you can use a type alias, that allows you to create a type.
+ */
+
+typealias Point3D = (x: Int, y: Int, z: Int)
+let point: Point3D = (10, 22, 45)
+
+let test = (t: 10, y: 22, z: 45)
