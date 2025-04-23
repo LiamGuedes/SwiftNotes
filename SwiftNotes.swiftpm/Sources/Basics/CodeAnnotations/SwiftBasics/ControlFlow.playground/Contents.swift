@@ -159,10 +159,24 @@ default:
     print("Midnight")
 }
 
-let diceNumber = 4
+let diceNumber = 20
 switch diceNumber {
 case let side where side % 2 == 0:
     print("Even number")
 default:
     print("Odd number")
+}
+
+let rooms = (room101: true, room201: true, room203Vip: false)
+switch rooms {
+    case (true, true, true):
+        print("Every room is unavalaible")
+    case (_, true, true):
+        print("Second Floor is Crowd")
+    case (true, _, _):
+        print("firstFloorisCrowd")
+    case (_, _, false):
+        print("VIP room is free")
+    default:
+        print("Somewhere in space")
 }
